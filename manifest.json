@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"update_url":"http://clients2.google.com/service/update2/crx",
+    "name": "Bättre DI",
+  	"version": "1.0.1",
+  	"description": "Döljer vissa UI-element för att bättre visa artiklarna på Dagens Industri.",
+
+  	"page_action": {
+  		"default_icon": {                    
+            "19": "icons/di_red_19x19.png",           
+            "38": "icons/di_red_38x38.png"            
+          }
+  	},
+
+
+    "permissions": [ "tabs", "http://www.di.se/*" ],
+    "content_scripts": [
+    {
+      "matches": ["http://www.di.se/*"], 
+      "css" : ["di.css"]
+    }
+]
+}
