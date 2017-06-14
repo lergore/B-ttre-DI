@@ -2,15 +2,37 @@
 .js_framed-ad-container, 
 .di_panorama-wrapper, 
 .di_comservice-container,
+.di_header,
 #serviceplusPaywallpaywall-container {
 	display: none;
 }
 
-.di_top-nav__wrapper {
-	margin-top: 35px;
-}
 
 .paywall-content {
 	height: 100% !important;
 	overflow: inherit !important;
+}
+
+frame[name=contentFrame] {
+    overflow: visible !important;
+    height: auto !important;
+}
+
+frame[name=contentFrame] .js-main-body {
+    overflow: visible !important;
+    height: auto !important;
+}
+
+html frameset frame html body.js-main-body.wide {
+    overflow: visible !important;
+    height: auto !important;   
+}
+
+#pwOverlay {
+    display: none !important;
+}
+
+html[style="overflow: hidden;"] {
+    height: 100% !important;
+    overflow: inherit !important;   
 }

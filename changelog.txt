@@ -1,0 +1,4 @@
+1.0.3 
+removed top margin and edited description in manifest, also updated licence
+1.0.4
+removed new big header
